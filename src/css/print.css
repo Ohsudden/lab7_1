@@ -1,0 +1,44 @@
+/* Загальні стилі для друку */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Georgia, Palatino, serif; /* Шрифти із засічками */
+    color: #000;
+    background: none; /* Видалення фонових кольорів та зображень */
+  }
+  
+  .container {
+    margin: 50px; /* Поля при друці */
+  }
+  
+  header, footer {
+    display: none; /* Приховуємо шапку та підвал */
+  }
+  
+  /* Відображення URL для гіпертекстових посилань */
+  a:after {
+    content: " (" attr(href) ")"; /* Додає URL поруч із текстом посилання */
+    font-size: 90%; /* Зменшений шрифт для URL */
+    color: #000;
+  }
+  
+  a {
+    text-decoration: none; /* Видалення підкреслення */
+  }
+  
+  /* Заборона друкувати фонові кольори та зображення */
+  * {
+    background: none !important; /* Забираємо всі фони */
+    color: #000 !important;      /* Тільки чорний текст */
+  }
+  
+  /* Налаштування для статей */
+  main {
+    display: block;
+  }
+  
+  article {
+    margin-bottom: 20px;
+    line-height: 1.5; /* Покращує читабельність */
+  }
+  

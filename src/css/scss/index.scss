@@ -1,0 +1,129 @@
+@import 'H:/lab7_1/lab3/lab2/webpack-project/src/css/normalize.css';
+@import 'H:/lab7_1/lab3/lab2/webpack-project/src/css/print.css';
+
+.container {
+    height: 100%;
+    background: linear-gradient(0deg, rgb(230, 134, 23) 0%, rgb(246, 205, 156) 100%);
+    padding: 5% 5% 8% 5%;
+    text-align: center;
+    position: relative;
+}
+.news-item{
+    width: 20vw;
+    position: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news-item img{
+    width: 20vw;
+}
+ul {
+    list-style: none;
+    display: flex;     
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin: 0 10px;
+  }
+  
+  ul a {
+    text-decoration: none;
+    color: #000;
+  }
+/* Smartphones (вертикальная и горизонтальная ориентация) -------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .container {
+        width: 90%;
+        text-align: center;
+    }
+      ul {
+        flex-direction: column; 
+        align-items: center;    
+      }
+    
+      ul li {
+        margin: 10px 0; /* Відстань між елементами меню */
+      }
+      .ie-message {
+        display: none;
+        text-align: center;
+        background-color: #ffdddd;
+        color: #000;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      /* Для браузера IE 10 і нижче через умовний коментар */
+      .ie10 .ie-message,
+      .ie9 .ie-message,
+      .ie8 .ie-message {
+        display: block;
+      }
+    }
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        text-align: center;
+    }
+    ul {
+        flex-direction: column; 
+        align-items: center;    
+      }
+    
+      ul li {
+        margin: 10px 0; /* Відстань між елементами меню */
+      }
+      .ie-message {
+        display: none;
+        text-align: center;
+        background-color: #ffdddd;
+        color: #000;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      /* Для браузера IE 10 і нижче через умовний коментар */
+      .ie10 .ie-message,
+      .ie9 .ie-message,
+      .ie8 .ie-message {
+        display: block;
+      }
+    }
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+    .container {
+        width: 90%;
+        text-align: center;
+    }
+    ul {
+        flex-direction: column; 
+        align-items: center;  
+      }
+    
+      ul li {
+        margin: 10px 0; /* Відстань між елементами меню */
+      }
+      .ie-message {
+        display: none;
+        text-align: center;
+        background-color: #ffdddd;
+        color: #000;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      /* Для браузера IE 10 і нижче через умовний коментар */
+      .ie10 .ie-message,
+      .ie9 .ie-message,
+      .ie8 .ie-message {
+        display: block;
+      }
+    }
